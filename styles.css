@@ -64,3 +64,42 @@ footer {
     text-align: center;
     padding: 10px;
 }
+#checkout-form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#checkout-form h2 {
+    text-align: center;
+}
+
+#checkout-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#checkout-form label {
+    font-weight: bold;
+}
+
+#checkout-form input, #checkout-form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#checkout-form button {
+    background-color: #e59866;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#checkout-form button:hover {
+    background-color: #ca6f1e;
+}
