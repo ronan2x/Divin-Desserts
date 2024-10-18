@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divin Desserts - Cookies</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Divin Desserts</h1>
+        <p>Indulge in the finest homemade cookies</p>
+        <nav>
+            <a href="#cookies">Our Cookies</a>
+            <a href="#order">Order Now</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At Divin Desserts, we create delicious cookies baked with love and the finest ingredients. Discover your new favorite treat!</p>
+    </section>
+
+    <section id="cookies">
+        <h2>Our Current Cookie Selection</h2>
+        <div class="cookie-grid">
+            <div class="cookie">
+                <img src="chocolate_chip.jpg" alt="Chocolate Chip Cookie">
+                <h3>Chocolate Chip Cookie</h3>
+                <p>$3 each</p>
+                <button onclick="addToCart('Chocolate Chip Cookie', 3)">Add to Cart</button>
+            </div>
+            <div class="cookie">
+                <img src="peanut_butter.jpg" alt="Peanut Butter Cookie">
+                <h3>Peanut Butter Cookie</h3>
+                <p>$4 each</p>
+                <button onclick="addToCart('Peanut Butter Cookie', 4)">Add to Cart</button>
+            </div>
+            <div class="cookie">
+                <img src="oatmeal_raisin.jpg" alt="Oatmeal Raisin Cookie">
+                <h3>Oatmeal Raisin Cookie</h3>
+                <p>$3.50 each</p>
+                <button onclick="addToCart('Oatmeal Raisin Cookie', 3.5)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="order">
+        <h2>Order Summary</h2>
+        <div id="cart">
+            <p>Your cart is empty.</p>
+        </div>
+        <button id="checkout-btn" onclick="checkout()">Checkout</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Divin Desserts. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
