@@ -64,4 +64,12 @@ function submitOrder(event) {
     // After submission, you can redirect or clear the form
     document.getElementById('checkout').reset();
 }
+// Function to redirect to the checkout page
+function goToCheckout() {
+    if (cart.length === 0) {
+        alert('Your cart is empty! Please add items before proceeding.');
+    } else {
+        window.location.href = 'checkout.html';  // Redirect to the checkout page
+    }
+}
 
