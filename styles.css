@@ -1,15 +1,37 @@
+/* General Page Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Comic Sans MS', cursive, sans-serif;  /* Fun, bubbly font */
     margin: 0;
     padding: 0;
-    background-color: #f7f3e9;
+    background: linear-gradient(135deg, #ffcccb, #fff, #f5deb3); /* Pink, white, and cream gradient */
+    background-size: 150% 150%;
+    animation: backgroundGradient 10s ease infinite;
+    color: #333;
 }
 
+/* Bubbly Text */
+h1, h2, h3, p, label, button {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun font for text */
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);  /* Adding a bubbly shadow effect */
+}
+
+/* Keyframe Animation for subtle background movement */
+@keyframes backgroundGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Header Styling */
 header {
-    background-color: #e59866;
+    background-color: #ffb6c1;
     color: white;
     text-align: center;
     padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 nav a {
@@ -17,13 +39,24 @@ nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.2em;
+    border-radius: 8px;
+    padding: 8px 12px;
+    background-color: #ff69b4;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+nav a:hover {
+    background-color: #ff85a2;
+}
+
+/* Section Styling */
 section {
     padding: 20px;
     text-align: center;
 }
 
+/* Cookie Grid Styling */
 .cookie-grid {
     display: flex;
     justify-content: center;
@@ -31,48 +64,43 @@ section {
 }
 
 .cookie {
-    border: 1px solid #ccc;
+    border: 1px solid #f3a6a6;
     padding: 15px;
     width: 200px;
     text-align: center;
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .cookie img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    border: 2px solid #ffb6c1;
 }
 
 button {
-    background-color: #e59866;
+    background-color: #ff69b4;
     color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 10px;
+    font-size: 1.1em;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 button:hover {
-    background-color: #ca6f1e;
+    background-color: #ff85a2;
 }
 
-footer {
-    background-color: #e59866;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
+/* Checkout Form Styling */
 #checkout-form {
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
     text-align: left;
-}
-
-#checkout-form h2 {
-    text-align: center;
 }
 
 #checkout-form form {
@@ -83,23 +111,32 @@ footer {
 
 #checkout-form label {
     font-weight: bold;
+    color: #ff69b4;
 }
 
 #checkout-form input, #checkout-form select {
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 2px solid #ffb6c1;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #checkout-form button {
-    background-color: #e59866;
+    background-color: #ff69b4;
     color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-#checkout-form button:hover {
-    background-color: #ca6f1e;
+/* Footer Styling */
+footer {
+    background-color: #ffb6c1;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
 }
