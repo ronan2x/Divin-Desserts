@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f3e9;
+}
+
+header {
+    background-color: #e59866;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+.cookie-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cookie {
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.cookie img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+button {
+    background-color: #e59866;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ca6f1e;
+}
+
+footer {
+    background-color: #e59866;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
